@@ -1,0 +1,35 @@
+:root {
+  --fs-400: 1rem;
+  --fs-450: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2.5rem;
+}
+
+$ff-primary-500: 'Plus Jakarta Sans', sans-serif;
+
+$text-primary-100: #ffffff;
+$text-transparent-100: #ffffff80;
+$text-primary-400: #83869a;
+$text-primary-600: #f74780;
+$text-hover-600: #ffa7c3;
+$text-primary-700: #13183f;
+
+$c-primary-100: #ffffff;
+$c-primary-700: #13183f;
+
+$c-transparent-100: #ffffff80;
+
+$c-accent-500: #666ca3;
+
+$gradient-500: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+$gradient-600: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+
+@media (min-width: 48em) {
+  :root {
+    --fs-400: 1.125rem;
+    --fs-500: 1.5rem;
+    --fs-600: 2rem;
+    --fs-700: 3.5rem;
+  }
+}
