@@ -12,23 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: $tablet-size) {
-  body {
-  }
-}
 
-.wrapper {
-  padding: 1rem;
-  width: 100vw;
-  &--articles {
-  }
-}
-
-@media (min-width: $tablet-size) {
-  .wrapper {
-    padding: 1.5rem 2.5rem;
-  }
-}
 
 .flex {
   display: flex;
@@ -43,14 +27,3 @@ body {
   }
 }
 
-.footer {
-  width: 100vw;
-  padding: 2rem 1rem 1rem;
-  background-color: var(--bg-primary-700);
-}
-
-@media (min-width: $tablet-size) {
-  .footer {
-    padding-inline: 2.5rem;
-  }
-}

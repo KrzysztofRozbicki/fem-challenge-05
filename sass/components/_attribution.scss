@@ -7,5 +7,9 @@
   top: 1rem;
   &__link {
     font-size: var(--fs-300);
+    &:hover,
+    &:focus {
+      color: var(--text-hover-600);
+    }
   }
 }

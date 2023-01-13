@@ -1,0 +1,14 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
+.footer {
+  width: 100vw;
+  padding: 2rem 1rem 1rem;
+  background-color: var(--bg-primary-700);
+}
+
+@media (min-width: $tablet-size) {
+  .footer {
+    padding-inline: 2.5rem;
+  }
+}

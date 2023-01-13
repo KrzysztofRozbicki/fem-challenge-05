@@ -146,6 +146,7 @@
 
 @media (min-width: 48em) {
   .button--700:after {
+    pointer-events: none;
     content: "";
     position: absolute;
     top: -110px;
@@ -258,7 +259,35 @@
 .attribution__link {
   font-size: var(--fs-300);
 }
+.attribution__link:hover, .attribution__link:focus {
+  color: var(--text-hover-600);
+}
 
+.wrapper {
+  padding: 1rem;
+  width: 100vw;
+}
+@media (min-width: 48em) {
+  .wrapper {
+    padding: 1.5rem 2.5rem;
+  }
+}
+@media (min-width: 64em) {
+  .wrapper {
+    max-width: 1110px;
+  }
+}
+.footer {
+  width: 100vw;
+  padding: 2rem 1rem 1rem;
+  background-color: var(--bg-primary-700);
+}
+
+@media (min-width: 48em) {
+  .footer {
+    padding-inline: 2.5rem;
+  }
+}
 body {
   min-height: 100vh;
   display: -webkit-box;
@@ -279,15 +308,6 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper {
-  padding: 1rem;
-  width: 100vw;
-}
-@media (min-width: 48em) {
-  .wrapper {
-    padding: 1.5rem 2.5rem;
-  }
-}
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,16 +325,4 @@ body {
 }
 .section--articles {
   background: var(--linear-gradient-100);
-}
-
-.footer {
-  width: 100vw;
-  padding: 2rem 1rem 1rem;
-  background-color: var(--bg-primary-700);
-}
-
-@media (min-width: 48em) {
-  .footer {
-    padding-inline: 2.5rem;
-  }
 }/*# sourceMappingURL=main.min.css.map */
