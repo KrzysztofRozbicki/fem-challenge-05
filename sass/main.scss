@@ -9,17 +9,22 @@ body {
   align-items: center;
   font-family: var(--ff-primary-500);
   position: relative;
+  overflow-x: hidden;
+}
+
+@media (min-width: $tablet-size) {
+  body {
+  }
 }
 
 .wrapper {
   padding: 1rem;
   width: 100vw;
-  overflow: hidden;
   &--articles {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .wrapper {
     padding: 1.5rem 2.5rem;
   }
@@ -39,5 +44,13 @@ body {
 }
 
 .footer {
+  width: 100vw;
+  padding: 2rem 1rem 1rem;
   background-color: var(--bg-primary-700);
+}
+
+@media (min-width: $tablet-size) {
+  .footer {
+    padding-inline: 2.5rem;
+  }
 }

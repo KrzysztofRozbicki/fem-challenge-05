@@ -8,10 +8,12 @@
   flex-direction: column;
   gap: 1.5rem;
   &__photo {
-    position: relative;
-    display: block;
-    left: -6.5%;
-    width: 127%;
+    height: 115vw;
+    width: 100vw;
+    background-image: url('../assets/image-hero-mobile@2x.webp');
+    background-repeat: no-repeat;
+    background-position-x: -6.5vw;
+    background-size: 115vw;
   }
 }
 
@@ -19,13 +21,10 @@
   .hero {
     padding-block: 3.25rem;
     max-width: 398px;
+    margin-bottom: 5rem;
   }
 
   .hero__photo {
-    position: absolute;
-    width: auto;
-    top: 0;
-    right: 0;
-    transform: translate(220px, -50px);
+    display: none;
   }
 }

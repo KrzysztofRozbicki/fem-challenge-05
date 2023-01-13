@@ -2,7 +2,9 @@
 @use '../components/typography' as *;
 
 .attribution {
+  position: relative;
   text-align: center;
+  top: 1rem;
   &__link {
     font-size: var(--fs-300);
   }

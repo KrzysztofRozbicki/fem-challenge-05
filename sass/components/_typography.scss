@@ -31,6 +31,10 @@
 
 .text-accent-600 {
   @include text(var(--fs-450), var(--text-primary-600), 700, 1.55);
+  &:hover,
+  &:focus {
+    color: var(--text-hover-600);
+  }
 }
 
 .text-header-500 {
