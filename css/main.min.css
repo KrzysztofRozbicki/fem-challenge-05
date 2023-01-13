@@ -201,10 +201,24 @@
 .hero__photo {
   position: relative;
   display: block;
-  left: -3.5%;
-  width: 115.5%;
+  left: -6.5%;
+  width: 127%;
 }
 
+@media (min-width: 48em) {
+  .hero {
+    padding-block: 3.25rem;
+    max-width: 398px;
+  }
+  .hero__photo {
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(220px, -50px);
+            transform: translate(220px, -50px);
+  }
+}
 .attribution {
   text-align: center;
 }
@@ -235,6 +249,11 @@ body {
   padding: 1rem;
   width: 100vw;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 1.5rem 2.5rem;
+  }
 }
 .flex {
   display: -webkit-box;

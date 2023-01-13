@@ -19,6 +19,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
 .flex {
   display: flex;
   justify-content: space-between;

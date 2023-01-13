@@ -1,3 +1,6 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
 .article {
   border-radius: 10px;
   padding-inline: 1.75rem;

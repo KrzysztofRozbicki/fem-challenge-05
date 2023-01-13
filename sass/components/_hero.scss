@@ -1,3 +1,6 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
 .hero {
   padding-top: 1.375rem;
   padding-bottom: 2.875rem;
@@ -7,7 +10,22 @@
   &__photo {
     position: relative;
     display: block;
-    left: -3.5%;
-    width: 115.5%;
+    left: -6.5%;
+    width: 127%;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .hero {
+    padding-block: 3.25rem;
+    max-width: 398px;
+  }
+
+  .hero__photo {
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: 0;
+    transform: translate(220px, -50px);
   }
 }
