@@ -17,19 +17,116 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
+    <header>
+      <div class="wrapper flex">
+        <p class="logo">skilled</p>
+        <button class="button button--700">Get Started</button>
+      </div>
+    </header>
     <main>
-      <p class="text-400">TEST-400</p>
-      <p class="text-header-500">TEST-HEADER</p>
-      <p class="text-header-700">TEST-MAIN-HEADER</p>
+      <section class="section">
+        <div class="wrapper hero">
+          <h1 class="text-header-700">Maximize skill, minimize budget</h1>
+          <p class="text-400">
+            Our modern courses across a range of in-demand skills will give you the knowledge you
+            need to live the life you want.
+          </p>
+          <button class="button button--500">Get Started</button>
+        </div>
+        <picture class="hero__photo">
+          <source srcset="../assets/image-hero-desktop.webp" media="(min-width: 1024px)" />
+          <source
+            srcset="../assets/image-hero-desktop@2x.webp"
+            media="(min-width: 1024px) and (min-device-pixel-ratio: 2) and
+            (min-resolution: 192dpi) and
+            (min-resolution: 2dppx)"
+          />
+          <source srcset="../assets/image-hero-tablet.webp" media="(min-width: 768px)" />
+          <source
+            srcset="../assets/image-hero-tablet@2x.webp"
+            media="(min-width: 768px) and (min-device-pixel-ratio: 2) and
+            (min-resolution: 192dpi) and
+            (min-resolution: 2dppx)"
+          />
+          <img
+            class="hero__photo"
+            src="../assets/image-hero-mobile@2x.webp"
+            alt="Woman drinking coffee"
+          />
+        </picture>
+      </section>
+      <section class="section section--articles">
+        <div class="wrapper">
+          <ul class="article-flex">
+            <li class="article article--header">
+              <h2 class="text-header-600">Check out our most popular courses!</h2>
+            </li>
+            <li class="article">
+              <img src="../assets/icon-animation.svg" role="decoration" class="article__icon" />
+              <h3 class="text-header-500">Animation</h3>
+              <p class="text-400">
+                Learn the latest animation techniques to create stunning motion design and captivate
+                your audience.
+              </p>
+              <a href="" class="text-accent-600">Get Started</a>
+            </li>
+            <li class="article">
+              <img src="../assets/icon-design.svg" role="decoration" class="article__icon" />
+              <h3 class="text-header-500">Design</h3>
+              <p class="text-400">
+                Create beautiful, usable interfaces to help shape the future of how the web looks.
+              </p>
+              <a href="" class="text-accent-600">Get Started</a>
+            </li>
+            <li class="article">
+              <img src="../assets/icon-photography.svg" role="decoration" class="article__icon" />
+              <h3 class="text-header-500">Photography</h3>
+              <p class="text-400">
+                Explore critical fundamentals like lighting, composition, and focus to capture
+                exceptional photos.
+              </p>
+              <a href="" class="text-accent-600">Get Started</a>
+            </li>
+            <li class="article">
+              <img src="../assets/icon-crypto.svg" role="decoration" class="article__icon" />
+              <h3 class="text-header-500">Crypto</h3>
+              <p class="text-400">
+                All you need to know to get started investing in crypto. Go from beginner to
+                advanced with this 54 hour course.
+              </p>
+              <a href="" class="text-accent-600">Get Started</a>
+            </li>
+            <li class="article">
+              <img src="../assets/icon-business.svg" role="decoration" class="article__icon" />
+              <h3 class="text-header-500">Business</h3>
+              <p class="text-400">
+                A step-by-step playbook to help you start, scale, and sustain your business without
+                outside investment.
+              </p>
+              <a href="" class="text-accent-600">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <!-- Get Started Maximize skill, minimize budget Our modern courses across a range of in-demand
-    skills will give you the knowledge you need to live the life you want. Get Started Check out our
-    most popular courses! Animation Learn the latest animation techniques to create stunning motion
-    design and captivate your audience. Get Started Design Create beautiful, usable interfaces to
-    help shape the future of how the web looks. Get Started Photography Explore critical
-    fundamentals like lighting, composition, and focus to capture exceptional photos. Get Started
-    Crypto All you need to know to get started investing in crypto. Go from beginner to advanced
-    with this 54 hour course. Get Started Business A step-by-step playbook to help you start, scale,
-    and sustain your business without outside investment. Get Started Get Started -->
+    <footer class="footer">
+      <div class="wrapper flex">
+        <p class="logo logo--contrast">skilled</p>
+        <button class="button button--600">Get Started</button>
+      </div>
+      <div class="attribution text-300">
+        <a
+          class="text-header-600 attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+        >
+          Frontend Mentor
+        </a>
+        Coded by
+        <a class="text-header-600 attribution__link" href="https://pogbit.com/" target="_blank">
+          @K. Rozbicki
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

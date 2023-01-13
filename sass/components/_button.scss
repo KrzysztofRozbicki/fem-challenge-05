@@ -1,0 +1,45 @@
+@use '../utils/vars' as *;
+@use '../components/typography' as *;
+
+.button {
+  @extend .text-button-500;
+  padding: 0.625rem 1.5rem;
+  border-radius: 1.75rem;
+  border: none;
+  width: 10.5rem;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+  &--700 {
+    background-color: var(--bg-primary-700);
+    &:hover,
+    &:focus {
+      background-color: var(--bg-accent-700);
+    }
+  }
+  &--500 {
+    padding: 1rem 2.25rem;
+    background: var(--linear-gradient-500);
+    &:hover,
+    &:focus {
+      background: var(--linear-gradient-transparent-100), var(--linear-gradient-500);
+    }
+  }
+  &--600 {
+    background: var(--linear-gradient-600);
+    &:hover,
+    &:focus {
+      background: var(--linear-gradient-transparent-100), var(--linear-gradient-600);
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .button {
+    padding: 0.875rem 2rem;
+  }
+  .button--500 {
+    padding: 0.875rem 2rem;
+  }
+}

@@ -1,0 +1,27 @@
+.article {
+  border-radius: 10px;
+  padding-inline: 1.75rem;
+  padding-bottom: 2rem;
+  background-color: var(--bg-primary-100);
+  :nth-child(3) {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  &--header {
+    background: var(--linear-gradient-500);
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  &__icon {
+    position: relative;
+    top: -28px;
+  }
+}
+
+.article-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}

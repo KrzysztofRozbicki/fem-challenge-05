@@ -7,38 +7,47 @@
   line-height: $line;
 }
 
-.text-400 {
-  @include text(var(--fs-500), $text-primary-400, 500, 1.625);
-  &--button {
-    color: $text-primary-100;
-  }
+.text-300 {
+  @include text(var(--fs-300), var(--text-primary-400), 500, 1.625);
 }
 
-.text-accent-500 {
-  @include text(var(--fs-600), $text-primary-100, 800, 1.33);
+.text-400 {
+  @include text(var(--fs-400), var(--text-primary-400), 500, 1.625);
+}
+
+.text-header-600 {
+  @include text(var(--fs-600), var(--text-primary-100), 800, 1.33);
+}
+
+.logo {
+  @include text(var(--fs-700), var(--text-primary-700), 800, 1.26);
+  &--contrast {
+    color: var(--text-primary-100);
+  }
+}
+.text-button-500 {
+  @include text(var(--fs-400), var(--text-primary-100), 700, 1.75rem);
 }
 
 .text-accent-600 {
-  @include text(var(--fs--450), $text-primary-600, 700, 1.55);
+  @include text(var(--fs-450), var(--text-primary-600), 700, 1.55);
 }
 
 .text-header-500 {
-  @include text(var(--fs-500), $text-primary-700, 800, 1.26);
+  @include text(var(--fs-500), var(--text-primary-700), 800, 1.26);
 }
 
 .text-header-700 {
-  @include text(var(--fs-700), $text-primary-700, 800, 1.26);
+  @include text(var(--fs-900), var(--text-primary-700), 800, 1.26);
 }
 
-@media (min-width: 48em) {
+@media (min-width: $desktop-size) {
   .text-400 {
     line-height: 1.55;
   }
-
   .text-header-500 {
     line-height: 1.89;
   }
-
   .text-accent-500 {
     line-height: 1.25;
   }

@@ -1,0 +1,13 @@
+.hero {
+  padding-top: 1.375rem;
+  padding-bottom: 2.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  &__photo {
+    position: relative;
+    display: block;
+    left: -3.5%;
+    width: 115.5%;
+  }
+}

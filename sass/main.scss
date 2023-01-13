@@ -4,7 +4,34 @@
 body {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: $ff-primary-500;
+  font-family: var(--ff-primary-500);
+  position: relative;
+}
+
+.wrapper {
+  padding: 1rem;
+  width: 100vw;
+  overflow: hidden;
+  &--articles {
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section {
+  overflow: hidden;
+  &--articles {
+    background: var(--linear-gradient-100);
+  }
+}
+
+.footer {
+  background-color: var(--bg-primary-700);
 }

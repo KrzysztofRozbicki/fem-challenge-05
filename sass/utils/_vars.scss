@@ -1,35 +1,55 @@
 :root {
+  --fs-300: 0.75rem;
   --fs-400: 1rem;
   --fs-450: 1.125rem;
   --fs-500: 1.25rem;
   --fs-600: 1.5rem;
-  --fs-700: 2.5rem;
+  --fs-700: 1.75rem;
+  --fs-900: 2.5rem;
+
+  --ff-primary-500: 'Plus Jakarta Sans', sans-serif;
+
+  --text-primary-100: #ffffff;
+  --text-primary-400: #83869a;
+  --text-primary-600: #f74780;
+  --text-primary-700: #13183f;
+
+  --text-transparent-100: #ffffff80;
+  --text-hover-600: #ffa7c3;
+
+  --gradient-100: #ffffff;
+  --gradient-200: #f0f1ff;
+  --gradient-500: #f02aa6;
+  --gradient-600: #ff6f48;
+  --gradient-700: #4851ff;
+
+  --bg-primary-100: #ffffff;
+  --bg-primary-700: #13183f;
+  --bg-accent-700: #666ca3;
+
+  --transparent-100: #ffffff80;
+
+  --linear-gradient-transparent-100: linear-gradient(
+    0deg,
+    var(--transparent-100),
+    var(--transparent-100)
+  );
+  --linear-gradient-100: linear-gradient(180deg, var(--gradient-100) 0%, var(--gradient-200) 100%);
+  --linear-gradient-500: linear-gradient(180deg, var(--gradient-600) 0%, var(--gradient-500) 100%);
+  --linear-gradient-600: linear-gradient(180deg, var(--gradient-700) 0%, var(--gradient-500) 100%);
 }
 
-$ff-primary-500: 'Plus Jakarta Sans', sans-serif;
+$mobile-size: 20em;
+$tablet-size: 48em;
+$desktop-size: 64em;
 
-$text-primary-100: #ffffff;
-$text-transparent-100: #ffffff80;
-$text-primary-400: #83869a;
-$text-primary-600: #f74780;
-$text-hover-600: #ffa7c3;
-$text-primary-700: #13183f;
-
-$c-primary-100: #ffffff;
-$c-primary-700: #13183f;
-
-$c-transparent-100: #ffffff80;
-
-$c-accent-500: #666ca3;
-
-$gradient-500: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
-$gradient-600: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
-
-@media (min-width: 48em) {
+@media (min-width: $desktop-size) {
   :root {
+    --fs-300: 1rem;
     --fs-400: 1.125rem;
     --fs-500: 1.5rem;
     --fs-600: 2rem;
-    --fs-700: 3.5rem;
+    --fs-700: 2.25rem;
+    --fs-900: 3.5rem;
   }
 }
