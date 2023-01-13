@@ -21,10 +21,23 @@
   .hero {
     padding-block: 3.25rem;
     max-width: 398px;
-    margin-bottom: 5rem;
+    margin-bottom: 5.125rem;
   }
 
   .hero__photo {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .hero {
+    padding-block: 8rem;
+    max-width: 457px;
+    gap: 0;
+  }
+  .hero :nth-child(2) {
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+    padding-right: 0.75rem;
   }
 }

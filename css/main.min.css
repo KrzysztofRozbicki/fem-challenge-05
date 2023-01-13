@@ -152,7 +152,7 @@
     top: -110px;
     left: -200px;
     width: 408px;
-    height: 700px;
+    height: min(175vh, 720px);
     background-image: url("../assets/image-hero-tablet.webp");
     background-size: auto;
     background-repeat: no-repeat;
@@ -164,6 +164,13 @@
   }
   .button--500 {
     padding: 0.875rem 2rem;
+  }
+  .button--700:after {
+    background-image: url("../assets/image-hero-desktop.webp");
+    top: -180px;
+    left: max(-29.3vw, -380px);
+    width: clamp(57.6vw, 60vw, 716px);
+    height: 150vh;
   }
 }
 .article {
@@ -220,6 +227,19 @@
     gap: 0.75rem;
   }
 }
+@media (min-width: 64em) {
+  .article {
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    display: inline-block;
+    -ms-flex-preferred-size: calc((100% - 1.875rem) / 3);
+        flex-basis: calc((100% - 1.875rem) / 3);
+    margin-bottom: 5rem;
+  }
+  .article--header {
+    padding-top: 4rem;
+  }
+}
 .hero {
   padding-top: 1.375rem;
   padding-bottom: 2.875rem;
@@ -245,10 +265,22 @@
   .hero {
     padding-block: 3.25rem;
     max-width: 398px;
-    margin-bottom: 5rem;
+    margin-bottom: 5.125rem;
   }
   .hero__photo {
     display: none;
+  }
+}
+@media (min-width: 64em) {
+  .hero {
+    padding-block: 8rem;
+    max-width: 457px;
+    gap: 0;
+  }
+  .hero :nth-child(2) {
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+    padding-right: 0.75rem;
   }
 }
 .attribution {
@@ -274,7 +306,7 @@
 }
 @media (min-width: 64em) {
   .wrapper {
-    max-width: 1110px;
+    padding-inline: min(11.7vw, 10.5rem);
   }
 }
 .footer {
@@ -286,6 +318,11 @@
 @media (min-width: 48em) {
   .footer {
     padding-inline: 2.5rem;
+  }
+}
+@media (min-width: 64em) {
+  .footer {
+    padding-inline: min(12vw, 10.5rem);
   }
 }
 body {

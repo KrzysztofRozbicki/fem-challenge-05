@@ -44,7 +44,7 @@
     top: -110px;
     left: -200px;
     width: 408px;
-    height: 700px;
+    height: min(175vh, 720px);
     background-image: url('../assets/image-hero-tablet.webp');
     background-size: auto;
     background-repeat: no-repeat;
@@ -56,5 +56,12 @@
   }
   .button--500 {
     padding: 0.875rem 2rem;
+  }
+  .button--700:after {
+    background-image: url('../assets/image-hero-desktop.webp');
+    top: -180px;
+    left: max(-29.3vw, -380px);
+    width: clamp(57.6vw, 60vw, 716px);
+    height: 150vh;
   }
 }

@@ -12,3 +12,9 @@
     padding-inline: 2.5rem;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .footer {
+    padding-inline: min(12vw, 10.5rem);
+  }
+}
