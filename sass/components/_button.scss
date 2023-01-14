@@ -60,8 +60,10 @@
   .button--700:after {
     background-image: url('../assets/image-hero-desktop.webp');
     top: -180px;
-    left: max(-29.3vw, -380px);
-    width: clamp(57.6vw, 60vw, 716px);
+    left: -380px;
+    width: 716px;
     height: 150vh;
   }
 }
+
+

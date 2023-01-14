@@ -12,6 +12,11 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 90em) {
+  .body {
+    overflow-x: visible;
+  }
+}
 
 .flex {
   display: flex;
@@ -23,5 +28,11 @@ body {
   overflow: hidden;
   &--articles {
     background: var(--linear-gradient-100);
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .section {
+    overflow: visible;
   }
 }
